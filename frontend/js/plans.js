@@ -1,5 +1,5 @@
 // In production, change this to your live domain e.g. 'https://yoursite.com/api'
-let api_url = 'http://localhost:5555/api' // dont forget to change this later
+let api_url = 'https://note-forge3.vercel.app/api' // dont forget to change this later
 
 
 // Temporary text while plans load
