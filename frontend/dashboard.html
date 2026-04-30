@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - My Notes</title>
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/dashboard/dashboard.css">
+  <link rel="stylesheet" type="text/css" href="css/responsiveness.css">
+</head>
+<body>
+
+  <header id="header">
+    <a href="#" id="logoutBtn">Logout</a>
+  </header>
+
+  <section id="dashboard-intro">
+    <div class="grid-container">
+      <div id="dashboard-title">
+        <h1>My Notes</h1>
+      </div>
+    </div>
+  </section>
+
+  <section id="dashboard-content">
+    <div class="grid-container">
+
+      <!-- CREATE NOTE -->
+      <div id="create-note">
+        <form id="createNoteForm">
+          <input type="text" id="noteText" placeholder="Write a new note..." required>
+          <button type="submit">Add</button>
+        </form>
+        <p class="form-message" id="createMsg"></p>
+      </div>
+
+      <!-- NOTES LIST -->
+      <div id="notesList" class="flex-container"></div>
+
+      <!-- EDIT SECTION -->
+      <div id="editSection" style="display:none;">
+        <input type="text" id="editNoteText" placeholder="Updated text...">
+        <input type="hidden" id="editNoteId">
+        <div id="edit-actions">
+          <button id="saveEditBtn">Save</button>
+          <button id="cancelEditBtn">Cancel</button>
+        </div>
+        <p class="form-message" id="editMsg"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/notes.js"></script>
+</body>
+</html>

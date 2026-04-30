@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/auth/form.css">
+  <link rel="stylesheet" type="text/css" href="css/pricing.css">
+  <link rel="stylesheet" type="text/css" href="css/responsiveness.css">
+</head>
+<body>
+  <main>
+    <section id="auth">
+      <div class="grid-container">
+        <div class="flex-container">
+          <h1>Register</h1>
+
+          <form id="registerForm">
+            <div>
+              <label>Name:</label><br>
+              <input type="text" id="name" required>
+            </div>
+            <br>
+            <div>
+              <label>Email:</label><br>
+              <input type="email" id="email" required>
+            </div>
+            <br>
+            <div>
+              <label>Password:</label><br>
+              <input type="password" id="password" required>
+            </div>
+            <br>
+          </form>
+
+          <div class="bottom-text">
+            <p id="errorMsg" style="color:red;"></p>
+            <p id="successMsg" style="color:green;"></p>
+
+            <p>Already have an account?<a href="login.html">Login here</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="grid-container">
+                <div id="pricing-title">
+                    <h1><strong>Pricing</strong></h1>
+                    <p>Select a plan to regiser your account</p>
+                    <button>Contact us</button>
+                </div>
+                <div id="pricing-plans" class="flex-container">
+                </div>
+            </div>
+    </section>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/plans.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+body { background: #0a1830; }
+
+/* Header */
+
+#header {
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid #1a345e;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#header a {
+    font-size: 13px;
+    color: #3d6494;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+#header a:hover { color: #6e9dea; }
+
+/* Intro */
+
+#dashboard-intro {
+    padding: 2rem 2rem 0;
+}
+
+#dashboard-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+#dashboard-title h1 {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+#planBadge {
+    font-size: 12px;
+    color: #3d6494;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* Content */
+
+#dashboard-content {
+    padding: 1.5rem 2rem 2rem;
+}
+
+#dashboard-content .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Create note */
+
+#create-note {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+#createNoteForm {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#createNoteForm input {
+    flex: 1;
+    padding: 0.55rem 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #1e3d6e;
+    background-color: #0d1f3c;
+    color: #e2e8f0;
+    font-size: 13px;
+    transition: border-color 0.2s;
+}
+#createNoteForm input:focus {
+    outline: none;
+    border-color: #6e9dea;
+}
+#createNoteForm input::placeholder { color: #2e4d74; }
+
+#createNoteForm button {
+    padding: 0.55rem 1.25rem;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* Notes list */
+
+#notesList {
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.note-card {
+    background-color: #112240;
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-width: 260px;
+    max-width: 320px;
+    flex: 1;
+}
+
+.note-card p {
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+.note-card small {
+    font-size: 11px;
+    color: #2e4d74;
+}
+
+.note-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.note-actions button {
+    flex: 1;
+    padding: 0.4rem 0.75rem;
+    font-size: 12px;
+}
+
+.note-actions .delete-btn {
+    background-color: #334155;
+}
+.note-actions .delete-btn:hover { background-color: #475569; }
+
+/* Edit section */
+
+#editSection {
+    background-color: #112240;
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 560px;
+}
+
+#editNoteText {
+    padding: 0.55rem 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #1e3d6e;
+    background-color: #0d1f3c;
+    color: #e2e8f0;
+    font-size: 13px;
+    width: 100%;
+}
+#editNoteText:focus {
+    outline: none;
+    border-color: #6e9dea;
+}
+
+#edit-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#edit-actions button {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 13px;
+}
+
+#cancelEditBtn {
+    background-color: #334155;
+}
+#cancelEditBtn:hover { background-color: #475569; }
+
+.form-message {
+    font-size: 12px;
+    color: #3d6494;
+    min-height: 1em;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+    #notesList { flex-direction: column; }
+    .note-card { min-width: unset; max-width: unset; }
+    #createNoteForm { flex-direction: column; align-items: stretch; }
+}
